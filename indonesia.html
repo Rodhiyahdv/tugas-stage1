@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodhiyah | Tugas Stage 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        DASHBOARD ANALYTICS COVID19
+    </header>
+    <section>
+        <div class="container fa">
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a class="active" href="indonesia.html">Indonesia</a>
+                <a href="global.html">Global</a>
+            </div>        
+        </div>
+    </section>     
+    <section>       
+        <div class="container title-data"><p>Data Berdasarkan Provinsi</p></div>
+        <div class="container title-data">
+            <input type="text" id="keywordProv" placeholder="Cari Provinsi">
+            <button id="getProv">Cari</button>
+        </div>
+
+        <div class="container">
+            <table class="table-data" id="data-prov">
+
+            </table>
+        </div>
+    </section>
+        
+    <footer>
+        <div class="container fa title-data">
+            Rodhiyah Desviana &copy; 2021
+        </div>
+    </footer>
+    
+    <script src="indonesia.js"></script>
+</body>
+</html>
