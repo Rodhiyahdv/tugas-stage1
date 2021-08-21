@@ -4,15 +4,21 @@
 
 body {
     max-width: 1440px;
+    color:black;
     background-color:whitesmoke;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-header {
-    text-align: center;
+header h4 {
     font-size: 20pt;
     font-weight: bold;
-    margin: 50px;
+    margin: 30px;
+}
+
+table {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table p {
@@ -25,8 +31,13 @@ table img {
 }
 
 .table-data {    
-    width: 100%;
+    width: 75%;
     border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table-data thead {
+    text-align: center;
 }
 
 .table-data th, .table-data td {
@@ -57,12 +68,10 @@ input {
 button {
     text-align: center;
     color: white;
+    font-size: 10pt;
     background-color: mediumslateblue;
-    width: 50px;
-    height: 30px;
-    margin-left: 5px;
-    border: 0px solid grey;
-    border-radius: 5px;
+    border: none;
+    border-radius: 50%;
     box-shadow: 1px 1px 2px rgba(105, 104, 104, 0.5);
 }
 
@@ -82,12 +91,13 @@ footer {
 .menu a {
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
 }
 
 .menu a:hover {
     background-color: cornsilk;
+    color: black;
 }
 
 .menu a.active {
@@ -103,22 +113,22 @@ footer {
     justify-content: center;
 }
 
-.container {
+.box-content {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: auto;
 }
 
-.container p {
+.box-content p {
     font-size: 16pt;
     font-weight: bold;
 }
 
 .items {
     width: 300px;
-    height: 130px;
+    height: 100px;
     text-align: center;
     padding: 4px;
     margin-left: auto;
@@ -157,7 +167,7 @@ footer {
         font-size: 14pt;
     }
 
-    .container p {
+    .box-content p {
         font-size: 12pt;
     }
 
